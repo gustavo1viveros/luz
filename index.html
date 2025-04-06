@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Luz 🌙</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Aseguramos que el video sea pequeño y esté centrado */
+    iframe {
+      width: 100%;
+      max-width: 500px; /* Tamaño máximo del video */
+      height: 280px;    /* Altura del video */
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenido principal (mensaje) -->
+  <div class="content">
+    <h1>Para Luz ✨</h1>
+    <p>
+      Te amo mucho mi amor, gracias por aparecer en mi vida. <br>
+      Sos tan hermosa y perfecta. <br>
+      Te extraño bastante y estoy tekorei por eso hago esto jeje.
+    </p>
+  </div>
+
+  <!-- Canvas para las estrellas -->
+  <canvas id="stars"></canvas>
+
+  <!-- Incrustar el video de YouTube con reproducción automática -->
+  <iframe 
+    src="https://www.youtube.com/embed/2aksg6gYUU4?autoplay=1&mute=0&controls=1" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+
+  <script src="stars.js"></script>  <!-- Este archivo es necesario para la animación de las estrellas -->
+</body>
+</html>
