@@ -1,0 +1,78 @@
+/* Estilo del body */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    position: relative; /* Permite que las estrellas estén sobre todo */
+  }
+  
+  /* Contenedor para el video */
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el video detrás del contenido */
+    overflow: hidden;
+  }
+  
+  /* Video */
+  iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+  }
+  
+  /* Contenido principal */
+  .content {
+    z-index: 1; /* Hace que el contenido esté encima del video */
+    padding: 20px;
+    margin-top: 50px; /* Se mueve un poco más hacia abajo para no estar tan cerca del video */
+  }
+  
+  /* Títulos y párrafos */
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    max-width: 600px;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  
+  /* Animación de estrellas */
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2; /* Coloca las estrellas detrás del contenido */
+    pointer-events: none; /* Asegura que las estrellas no interfieran con el contenido */
+  }
+  
+  button {
+    background: #ffffff22;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background: #ffffff44;
+  }  
